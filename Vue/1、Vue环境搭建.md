@@ -9,7 +9,7 @@ npm install --global vue-cli
 ```
 cnpm install --global vue-cli
 ```
-  此命令只需要执行一次
+  此命令只需要执行一次  
 3. 创建项目
   必须cd到对应的一个项目里面
   > cmd 命令
