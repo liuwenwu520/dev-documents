@@ -15,16 +15,16 @@
 - 支持 SSR
 ### # Start
 #### Install
-'''sh
+```sh
 npm i -S
-或者通过yarn
+# 或者通过yarn
 yarn add vuescroll
-或者通过cnpm
+# 或者通过cnpm
 cnpm i -S
-'''
+```
 #### 引入
 1. 全局引入
-'''js
+```js
 // main.js 入口文件
 import Vue from 'vue';
 import vuescroll from 'vuescroll';
@@ -43,9 +43,9 @@ Vue.prototype.$vuescrollConfig = {
     background: '#000'
   }
 };
-'''
+```
 2. 局部引入
-'''html
+```html
 <template>
   <vue-scroll> <!-- 你的内容... --> </vue-scroll>
 </template>
@@ -58,21 +58,21 @@ Vue.prototype.$vuescrollConfig = {
     }
   };
 </script>
-'''
+```
 #### 只引入需要的模式
 - 只引入slide模式的特性：
 native 模式: 类似于原生的滚动条，但是可以自定义滚动条样式，使用于 PC 端用户。
-'''js
+```js
 import Vue from 'vue';
 import vuescroll from 'vuescroll/dist/vuescroll-slide';
 import 'vuescroll/dist/vuescroll.css';
 Vue.use(vuescroll);
-'''
+```
 - 只引入native模式的特性：
 slide 模式: 允许你用手指或鼠标滑动内容， 可以滑动超出边界范围，适用于移动端端用户。
-'''js
+```js
 import Vue from 'vue';
 import vuescroll from 'vuescroll/dist/vuescroll-native';
 import 'vuescroll/dist/vuescroll.css';
 Vue.use(vuescroll);
-'''
+```
