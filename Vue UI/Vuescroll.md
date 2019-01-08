@@ -17,9 +17,9 @@
 #### Install
 '''sh
 npm i -S
-# 或者通过yarn
+或者通过yarn
 yarn add vuescroll
-# 或者通过cnpm
+或者通过cnpm
 cnpm i -S
 '''
 #### 引入
