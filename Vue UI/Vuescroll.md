@@ -1,6 +1,6 @@
 ## Vuescroll 滚动条插件
 > 一个可定制的， 功能强大，多模式的基于 Vue.js 设计的滚动条插  
-> [Vuescroll官网](vuescrolljs.yvescoding.org)
+> [Vuescroll官网](http://vuescrolljs.yvescoding.org)
 ### # 特点
 #### 基本特点
 - 支持自定义滚动条，包括可以设置滚动条/轨道的颜色、透明度。可以设置滚动条是否保持显示。
@@ -16,7 +16,7 @@
 ### # Start
 #### Install
 ```sh
-npm i -S
+npm i vuescroll -S
 # 或者通过yarn
 yarn add vuescroll
 # 或者通过cnpm
