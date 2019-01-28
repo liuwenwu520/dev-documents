@@ -25,5 +25,5 @@ ll 相当于 ls -l
 ```
 - 安装命令
 ```sh
-sudo apt-get install
+sudo apt-get install [service-name]
 ```
