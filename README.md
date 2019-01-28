@@ -1,7 +1,7 @@
 # Documations
 这是一个文档介绍
 # # TeamViewer
-## Company
+- Company
 1 179 834 611
-## Home
+- Home
 1 164 808 277
