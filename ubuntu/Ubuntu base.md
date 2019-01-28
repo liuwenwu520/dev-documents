@@ -23,3 +23,7 @@ ls --help
 ```sh
 ll 相当于 ls -l
 ```
+- 安装命令
+```sh
+sudo apt-get install
+```
