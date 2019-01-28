@@ -27,3 +27,11 @@ ll 相当于 ls -l
 ```sh
 sudo apt-get install [service-name]
 ```
+- 移除命令
+```sh
+sudo apt-get autoremove [service-name]
+```
+- 查看已安装程序
+```sh
+dpkg
+```
