@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: eureka-server
+server:
+    port: 8801
+eureka:
+    instance:
+        hostname: 127.0.0.1
+        virtual-host-name: 127.0.0.1
+    client:
+        register-with-eureka: false
+        fetch-registry: false
+        service-url:
+            defaultZone: http://${eureka.instance.virtual-host-name}:${server.port}/eureka/
+    server:
+        enable-self-preservation: false
