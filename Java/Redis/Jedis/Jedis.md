@@ -40,3 +40,25 @@ spring
         max-idle: 10
         max-wait: -1ms
 ```
+### 3. 配置工厂类
+```kt
+package org.wenwu.authentication.base.config
+
+import org.springframework.boot.autoconfigure.data.redis.RedisProperties
+import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.Configuration
+import redis.clients.jedis.JedisPool
+import redis.clients.jedis.JedisPoolConfig
+
+@Configuration
+class JedisPoolFactory(val properties: RedisProperties) {
+    @Bean
+    fun getJedisPool(): JedisPool {
+        val config = JedisPoolConfig()
+        config.maxIdle = properties.jedis.pool.maxIdle
+        config.maxTotal = properties.jedis.pool.maxActive
+        config.maxWaitMillis = properties.jedis.pool.maxWait.toMillis()
+        return JedisPool(config, properties.host, properties.port, 2000, properties.password)
+    }
+}
+```
