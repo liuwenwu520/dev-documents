@@ -41,7 +41,7 @@ spring
         max-wait: -1ms
 ```
 ### 3. 配置工厂类
-```kt
+```kotlin
 package org.wenwu.authentication.base.config
 
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties
