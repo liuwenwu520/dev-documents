@@ -23,3 +23,20 @@
     <!--<version>2.9.0</version>-->
 </dependency>
 ```
+### 2. 配置application.yml
+```yml
+spring
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password: 333
+    timeout: 0ms
+    # jedis pool
+    jedis:
+      pool:
+        min-idle: 5
+        max-active: 10
+        max-idle: 10
+        max-wait: -1ms
+```
