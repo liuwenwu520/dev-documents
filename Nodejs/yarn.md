@@ -6,7 +6,6 @@ yarn config get registry
 yarn config set registry https://registry.taobao.org
 yarn config set registry https://registry.yarnpkg.com
 ```
-
 ## yarn 命令
 ```shell
 # 安装包
@@ -28,4 +27,9 @@ npm run === yarn run
 npm cache clean === yarn cache clean
 npm login === yarn login (logout 同理)
 npm test === yarn test
+```
+## yarn 全局命令
+在你的操作系统上全局安装包
+```bash
+yarn global <add/bin/list/remove/upgrade> [--prefix]
 ```
