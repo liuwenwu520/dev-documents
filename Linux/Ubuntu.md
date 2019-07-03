@@ -5,6 +5,8 @@
 sudo su
 # 安装包命令
 dpkg [<option> ...] <command>
+# 查看服务
+service < option > | --status-all | [ service_name [ command | --full-restart ] ]
 ```
 ### 文件命令
 ```shell
