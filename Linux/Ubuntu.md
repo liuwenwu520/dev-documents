@@ -7,6 +7,8 @@ sudo su
 dpkg [<option> ...] <command>
 # 查看服务
 service < option > | --status-all | [ service_name [ command | --full-restart ] ]
+
+
 ```
 ### 文件命令
 ```shell
@@ -14,4 +16,14 @@ service < option > | --status-all | [ service_name [ command | --full-restart ] 
 grep [OPTION]... PATTERN [FILE]...
 Search for PATTERN in each FILE.
 Example: grep -i 'hello world' menu.h main.c
+```
+
+### 用户命令
+```shell
+# sudo 命令
+sudo - execute a command as another user
+# 切换超级用户
+sudo su
+# 设置用户密码
+sudo passwd [username]
 ```
