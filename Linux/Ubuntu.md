@@ -24,6 +24,9 @@ Example: grep -i 'hello world' menu.h main.c
 sudo - execute a command as another user
 # 切换超级用户
 sudo su
+su
+# 切换用户
+su [username]
 # 设置用户密码
 # root 账户下
 sudo passwd [username]
