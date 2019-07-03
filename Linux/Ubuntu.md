@@ -20,10 +20,13 @@ Example: grep -i 'hello world' menu.h main.c
 
 ### 用户命令
 ```shell
-# sudo 命令
+# sudo 命令，执行另一个用户的命令
 sudo - execute a command as another user
 # 切换超级用户
 sudo su
 # 设置用户密码
+# root 账户下
 sudo passwd [username]
+# 设置本账户密码
+passwd
 ```
