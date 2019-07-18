@@ -1,7 +1,7 @@
 ## dataZoom 滚动条或界面滑动
 - 滑动条高度配置
 > slider 类型中配置 height
-```
+```js
 dataZoom: [
           {
             type: 'slider',
