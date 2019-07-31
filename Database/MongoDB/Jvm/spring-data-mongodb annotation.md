@@ -20,3 +20,16 @@
 data class MapService(@Id var id: String, var name: String) {
 }
 ```
+### @Field
+> 代表一个字段，可以不加，不加的话默认以参数名为列名。
+> 为字段映射别名。
+```kotlin
+data class MapService(@ID var id: String) {
+    @Field("fName")
+    var firstName: String = ""
+}
+```
+### @Transient
+> 被该注解标注的，将不会被录入到数据库中。只作为普通的javaBean属性。
+### @DBRef
+> 关联另一个document对象。类似于mysql的表关联，但并不一样，mongo不会做级联的操作。
