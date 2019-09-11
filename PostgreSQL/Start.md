@@ -1,6 +1,6 @@
 
 ### 1 Install PostgreSQL from Ubunt
-[官方地址](https://www.postgresql.org/download/linux/ubuntu/)
+[PostgreSQL 官方地址](https://www.postgresql.org/download/linux/ubuntu/)
 
 ### 2 Uninstall PostgreSQL for Linux
 - 删除相关安装
