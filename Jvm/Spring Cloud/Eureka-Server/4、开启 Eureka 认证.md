@@ -16,3 +16,11 @@ spring:
       password: 123
 ```
 3. Eureka 中的使用
+> 客户端 application.yml 文件
+> 添加用户名和密码前缀
+```yml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123@localhost:8201/eureka/
+```
