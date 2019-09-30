@@ -15,12 +15,22 @@ spring:
       name: admin
       password: 123
 ```
-3. Eureka 中的使用
+3. 关闭 security 中的 csrf 保护
+```
+@EnableWebSecurity
+class WebSecurityConfig : WebSecurityConfigurerAdapter() {
+    override fun configure(http: HttpSecurity?) {
+        http as HttpSecurity
+        http.csrf().disable()
+    }
+}
+```
+4. Eureka 客户端中使用
 > 客户端 application.yml 文件
 > 添加用户名和密码前缀
 ```yml
 eureka:
   client:
     service-url:
-      defaultZone: http://admin:123@localhost:8201/eureka/
+      defaultZone: http://name:password@localhost:8201/eureka/
 ```
