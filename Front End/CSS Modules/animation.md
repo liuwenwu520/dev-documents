@@ -11,7 +11,7 @@
 }
 .root {
     width: 100%;
-    animation-during: 1s;
+    animation-duration: 1s;
     animation-name: loading;
 }
 ```
