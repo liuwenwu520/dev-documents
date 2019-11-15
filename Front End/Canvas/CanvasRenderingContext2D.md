@@ -44,3 +44,21 @@ function fill(path: Path2D, fillRule: string): void
 //            "evenodd": 奇偶环绕规则。
 // path 需要填充的Path2D 路径。
 ```
+### 路径命令
+- 移动笔触
+```ts
+function moveTo(x: number, y: number): void
+```
+- 直线
+```ts
+function lineTo(x: number, y: number): void
+```
+- 圆弧
+```ts
+// 画一个以（x,y）为圆心的以radius为半径的圆弧（圆），从startAngle开始到endAngle结束，按照anticlockwise给定的方向（默认为顺时针）来生成。
+function arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, anticlockwise?: boolean = false): void
+
+// 根据当前描点与给定的控制点1连接的直线，和控制点1与控制点2连接的直线，作为使用指定半径的圆的切线，画出两条切线之间的弧线路径。
+function arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void
+
+```
