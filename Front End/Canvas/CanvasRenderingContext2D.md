@@ -1,8 +1,8 @@
 ## CanvasRenderingContext2D  二维渲染上下文
 ### 获取二维渲染上下文
-```js
-let dom = document.getElementById('canvas')
-let ctx = dom.getContext('2d')
+```ts
+let dom = document.getElementById('canvas') as HTMLCanvasElement
+let ctx = dom.getContext('2d') as CanvasRenderingContext2D
 ```
 ### 绘制矩形
 ```ts
