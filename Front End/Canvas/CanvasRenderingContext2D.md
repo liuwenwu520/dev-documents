@@ -55,7 +55,9 @@ function lineTo(x: number, y: number): void
 ```
 - 圆弧
 ```ts
-// 画一个以（x,y）为圆心的以radius为半径的圆弧（圆），从startAngle开始到endAngle结束，按照anticlockwise给定的方向（默认为顺时针）来生成。
+// 画一个以（x,y）为圆心的以radius为半径的圆弧（圆），从 startAngle 开始到 endAngle 结束，
+// 按照 anticlockwise 给定的方向（默认为顺时针）来生成。
+// startAngle 与 enddAngle 单位为弧度
 function arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, anticlockwise?: boolean = false): void
 
 // 根据当前描点与给定的控制点1连接的直线，和控制点1与控制点2连接的直线，作为使用指定半径的圆的切线，画出两条切线之间的弧线路径。
