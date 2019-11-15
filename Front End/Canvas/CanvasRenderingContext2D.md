@@ -77,3 +77,8 @@ function quadraticCurveTo(cpx: number, cpy: number, x: number, y: number): void
 // 起点为上一次结束位置
 function bezierCurveTo(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): void
 ```
+- 矩形
+```ts
+// x,y 其实点坐标, width,height 矩形宽高
+function rect(x: number, y: number, width: number, height: number): void
+```
