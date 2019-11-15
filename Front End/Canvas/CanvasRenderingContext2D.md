@@ -57,10 +57,23 @@ function lineTo(x: number, y: number): void
 ```ts
 // 画一个以（x,y）为圆心的以radius为半径的圆弧（圆），从 startAngle 开始到 endAngle 结束，
 // 按照 anticlockwise 给定的方向（默认为顺时针）来生成。
-// startAngle 与 enddAngle 单位为弧度
 function arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, anticlockwise?: boolean = false): void
+// x 和 y 为圆心
+// startAngle 与 enddAngle 单位为弧度
 
 // 根据当前描点与给定的控制点1连接的直线，和控制点1与控制点2连接的直线，作为使用指定半径的圆的切线，画出两条切线之间的弧线路径。
+// 这个只能画圆弧
 function arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void
-
+```
+- 二次贝塞尔曲线
+```ts
+// cpx,cpy 为一个控制点，x,y为结束点。
+// 起点为上次一次结束位置
+function quadraticCurveTo(cpx: number, cpy: number, x: number, y: number): void
+```
+- 三次贝塞尔曲线
+```ts
+// cp1x,cp1y 为第一个控制点, cp2x,cp2y 为第二个控制点，x,y为结束点。
+// 起点为上一次结束位置
+function bezierCurveTo(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): void
 ```
