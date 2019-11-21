@@ -2,8 +2,8 @@
 ```
 A rx ry x-axis-rotation large-arc-flag sweep-flag x y
 a rx ry x-axis-rotation large-arc-flag sweep-flag dx dy
-rx: x轴（长轴或者短轴）
-ry: y轴（长轴或者短轴）
+rx: x轴（长轴或者短轴的一半）
+ry: y轴（长轴或者短轴的一半）
 x-axis-rotation: 旋转角度(degree) (只有 rx 和 ry 不同时才生效)
 large-arc-flat: 0 短弧 1 长弧
 sweep-flag: 0 逆时针 1 顺时针
