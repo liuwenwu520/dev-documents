@@ -21,3 +21,89 @@ $fancybox-width: 400px !default;
 @import "themes/_night-sky";
 @import "themes/night-sky";
 ```
+- 嵌套导入
+```scss
+// _blue-theme.scss
+aside {
+  background: blue;
+  color: white;
+}
+
+// now.scss
+.blue-theme {@import "blue-theme"}
+
+// generate
+.blue-theme {
+  aside {
+    background: blue;
+    color: #fff;
+  }
+}
+```
+### mixin
+> 使用混入提高代码重用
+- 基本使用
+```scss
+// 声明 @mixin
+@mixin rounded-corners {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+// 使用 @include
+notice {
+  background-color: green;
+  border: 2px solid #00aa00;
+  @include rounded-corners;
+}
+```
+- 带参数的 mixin
+```scss
+// 声明
+@mixin link-colors($normal, $hover, $visited) {
+  color: $normal;
+  &:hover { color: $hover; }
+  &:visited { color: $visited; }
+}
+// 调用
+a {
+    @include link-colors(
+      $normal: blue,
+      $visited: green,
+      $hover: red
+  );
+}
+
+```
+- 带默认参数的 mixin
+```scss
+// 声明
+@mixin link-colors(
+    $normal,
+    $hover: $normal,
+    $visited: $normal
+  )
+{
+  color: $normal;
+  &:hover { color: $hover; }
+  &:visited { color: $visited; }
+}
+// 调用
+a {
+    @include link-colors(red);
+}
+// $hover 和 $visited 也会被自动赋值为 red
+```
+### 继承
+```scss
+//通过选择器继承继承样式
+.error {
+  border: 1px solid red;
+  background-color: #fdd;
+}
+.seriousError {
+  @extend .error;
+  border-width: 3px;
+}
+// 以class="seriousError" 修饰的html元素最终的展示效果就好像是class="seriousError error"。
+```
