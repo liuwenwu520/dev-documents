@@ -10,6 +10,16 @@ $fancybox-width: 400px !default;
     width: $fancybox-width;
 }
 ```
+- 局部转全局
+> !global 局部变量转全局变量
+```scss
+#main {
+    $width: 5em !global;
+}
+#sidebar {
+    width: $width;
+}
+```
 ### 嵌套
 ### 导入 SASS 文件
 - 引入其他 SASS 文件
