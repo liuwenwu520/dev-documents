@@ -1,0 +1,15 @@
+## Reflect
+Reflect 是一个内置的对象，它提供拦截 JavaScript 操作的方法。这些方法与proxy handlers的方法相同。Reflect不是一个函数对象，因此它是不可构造的。
+- Reflect.apply()
+- Reflect.construct()
+- Reflect.defineProperty()
+- Reflect.deleteProperty()
+- Reflect.get()
+- Reflect.getOwnPropertyDescriptor()
+- Reflect.getPrototypeOf()
+- Reflect.has()
+- Reflect.isExtensible()
+- Reflect.ownKeys()
+- Reflect.preventExtensions()
+- Reflect.set()
+- Reflect.setPrototypeOf()
