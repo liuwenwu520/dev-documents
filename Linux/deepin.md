@@ -1,4 +1,9 @@
-## rfkill 管理蓝牙和 wifi 设备
+## 添加蓝牙驱动
+```bash
+sudo apt install bluetooth blueman
+```
+## rfkill 命令
+> 管理蓝牙和 wifi 设备
 ### 查看列表
 ```bash
 rfkill list
