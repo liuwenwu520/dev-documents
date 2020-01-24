@@ -1,9 +1,17 @@
 ## rfkill 管理蓝牙和 wifi 设备
 ### 查看列表
-- rfkill list
+```bash
+rfkill list
+```
 ### 帮助
-- rfkill --help
+```bash
+rfkill --help
+```
 ### 解锁
-- rfkill unblock [ID]
+```bash
+rfkill unblock [ID]
+```
 ### 锁定
-- rfkill block [ID]
+```bash
+rfkill block [ID]
+```
