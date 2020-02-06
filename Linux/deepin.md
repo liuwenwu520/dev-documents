@@ -41,3 +41,5 @@ sudo apt-get install libx11-dev
 ```bash
 sudo apt-get install libfreetype6-dev
 ```
+### make
+### make install
