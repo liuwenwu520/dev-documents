@@ -46,3 +46,20 @@ sudo apt-get install libfreetype6-dev
 make
 make install
 ```
+## shortcut 快捷方式
+```bash
+# 1 创建文件
+touch app.desktop
+# 2 编辑文件
+[Desktop Entry]
+Exec=/home/wenwu/Apps/firefox/firefox  //就是可执行程序的绝对路径
+Icon=/home/luka/Documents/MyPictures/genymotion/icons/icon.png //应用图标的绝对路径
+Type=Application  //貌似有Application和Link类型,这里是Application类型
+Terminal=false  //打开程序的时候要不要打开终端,false不打开,true打开,可以不写
+Name=Genymotion  //程序显示名
+GenericName=Genymotion // 可不写
+Categories=Gneymotion // 可不写
+Name[en_US]=Gnemotion
+GenericName[en_US.UTF-8]=Genymotion
+Name[zh_CN]=Genymotion
+```
