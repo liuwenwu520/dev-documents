@@ -13,7 +13,7 @@ touch [file name]
 # eg.
 touch xx.txt
 ```
-### rm 删除文件夹
+### rm 删除文件文件夹
 - syntax
 ```bash
 rm [option] [file or directory]
