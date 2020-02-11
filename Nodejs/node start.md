@@ -5,6 +5,8 @@
 2. 解压 nodejs 安装包
 ```bash 
 tar -xf node-v12.15.0-linux-x64.tar.xz
+或
+tar -xvf node-v12.15.0-linux-x64.tar.xz
 ```
 3. 修改文件夹名称为 nodejs
 ```bash
