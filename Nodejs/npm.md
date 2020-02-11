@@ -11,22 +11,22 @@ npm config delete registry
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 ## 设置 npm 全局安装路径
-```shell
+```bash
 # 查看路径
 npm config get prefix
 # 设置路径
-npm config set prefix D:\global
+npm config set prefix d:\appsdata\nodejs\npmGlobal
 ```
 ## 设置cache路径
-```shell
+```bash
 # 查看 cache 路径
 npm config get cache
 # 设置 cache 路径
-npm config set cache D:\cache
+npm config set cache d:\appsdata\nodejs\npmCache
 ```
 
 ## npm command
 1. 查看全局已安装包
-```shell
-npm list -g --depth 0
+```bash
+npm -g list --depth 0
 ```

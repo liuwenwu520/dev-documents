@@ -2,7 +2,7 @@
 ```bash
 sudo apt install bluetooth blueman
 ```
-## rfkill 命令
+## # rfkill 命令
 > 管理蓝牙和 wifi 设备
 ### - 查看列表
 ```bash
@@ -20,7 +20,7 @@ rfkill unblock [ID]
 ```bash
 rfkill block [ID]
 ```
-## wine 编译和安装(64bit linux)
+## # wine 编译和安装(64bit linux)
 ### build
 ```bash
 ./configure --enable-win64
@@ -46,7 +46,7 @@ sudo apt-get install libfreetype6-dev
 make
 make install
 ```
-## shortcut 快捷方式
+## # shortcut 快捷方式
 ```bash
 # 1 创建文件
 touch app.desktop
@@ -62,4 +62,14 @@ Categories=Gneymotion // 可不写
 Name[en_US]=Gnemotion
 GenericName[en_US.UTF-8]=Genymotion
 Name[zh_CN]=Genymotion
+```
+## # 环境变量
+```bash
+# /etc/profile 配置文件
+sudo vim /etc/profile
+# 在最后追加
+NPM=/home/w/appsData/nodejs/npmGlobal
+PATH=$NPM/bin:$PATH
+export PATH
+# 注销系统重登录即可
 ```
