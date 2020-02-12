@@ -57,10 +57,11 @@ yarn global <add/bin/list/remove/upgrade> [--prefix]
 # 输出已安装的可执行文件的位置
 yarn global bin
 ```
-### # yarn install
+### # yarn add
+> 安装包
 - syntax
 ```bash
-
+yarn add <pkg>... [flags]
 ```
 ### # yarn list
 > 列出已安装的包

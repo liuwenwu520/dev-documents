@@ -101,3 +101,15 @@ npm ls -g --depth 0
 # 查看本地已安装包 dependencies
 npm ls -prod --depth 0
 ```
+### # npm-update
+> 更新包
+- syntax
+```bash
+npm update [-g] [<pkg>...]
+aliases: up, update, upgrade
+```
+- example
+```bash
+# 更新全局所有包
+npm up -g
+```
