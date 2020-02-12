@@ -35,11 +35,11 @@ npm [folder]
 -g, --global    全局
 ```
 ### # npm-install
-> 安装
+> 安装包
 - syntax
 ```bash
-npm i [commonOption] [<@scope>/]<name>[@<version>]
-aliases: i, install
+npm add [commonOption] [<@scope>/]<pkg>[@<version>]...
+aliases: i, install, add
 ```
 - commonOption
 ```bash
@@ -51,10 +51,34 @@ aliases: i, install
 --no-save
 --dry-run
 -f, --force         如果包已安装，则会强制覆盖
+-g, --global
 ```
 - example
 ```bash
 npm i -gf @vue/cli
+# 安装多个包
+npm add node-sass sass-loader
+```
+### # npm-uninstall
+> 移除包
+> 安装包
+- syntax
+```bash
+npm rm [commonOption] [<@scope>/]<pkg>[@<version>]...
+aliases: r, rm, remove, un, unlink, uninstall
+```
+- commonOption
+```bash
+-P, --save-prod
+-D, --save-dev      开发依赖，不会打包
+-O, --save-optional
+-f, --force
+-g, --global        全局
+```
+- example
+```bash
+# 删除本地包
+npm rm node-sass sass-loader
 ```
 ### # npm-ls
 > 列出已安装包
@@ -65,10 +89,10 @@ aliases: ls, list, la, ll
 ```
 - configuration
 ```bash
-depth  Type: Int    依赖树最大展示深度
-global/g  Type: Boolean  Default: false  是否展示全局安装
-prod/production  Type: Boolean  Default: false  仅展示 dependencies
-dev/development  Type: Boolean  Default: false  仅展示 devDependencies
+--depth  Type: Int    依赖树最大展示深度
+-g, --global  Type: Boolean  Default: false  是否展示全局安装
+-prod, --production  Type: Boolean  Default: false  仅展示 dependencies
+-dev, --development  Type: Boolean  Default: false  仅展示 devDependencies
 ```
 - example
 ```
