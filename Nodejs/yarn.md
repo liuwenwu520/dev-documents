@@ -7,32 +7,23 @@ yarn config set registry https://registry.taobao.org
 yarn config set registry https://registry.yarnpkg.com
 ```
 ## yarn 配置 global 地址
-- yarn global bin 将输出 Yarn 为您已安装的可执行文件之符号链接准备的位置
-```shell
+- syntax
+```bash
+# 输出已安装的可执行文件的位置 (需要将这个文件夹位置添加到 环境变量 path 中) 
 yarn global bin
-```
-- 设置 global bin (需要将这个文件夹位置添加到 环境变量 path 中) 
-```shell
-yarn config set prefix [folder-path]
-# 设置后的结果为 [folder-path]\bin
-```
-- yarn global dir 将打印存放全局 node_modules 的全局安装文件夹
-```shell
-yarn global dir
-```
-- 设置 global dir
-```shell
-yarn config set global-folder [folder-path]
-```
-- yarn cache dir 打印出当前的 yarn 全局缓存在哪里
-```shell
-yarn cache dir
-```
-- 设置全局缓存位置
-```shell
-yarn config set cache-folder [folder-path]
-```
+# 配置全局位置
+yarn config set prefix <directory>
 
+# 输出全局安装文件夹 (node_modules)
+yarn global dir
+# 设置 global dir
+yarn config set global-folder <directory>
+
+# 输出当前的 yarn 全局缓存位置
+yarn cache dir
+# 设置全局缓存位置
+yarn config set cache-folder <directory>
+```
 ## yarn 命令
 ```shell
 # 安装包
@@ -55,8 +46,35 @@ npm cache clean === yarn cache clean
 npm login === yarn login (logout 同理)
 npm test === yarn test
 ```
-## yarn 全局命令
-在你的操作系统上全局安装包
+### # yarn global
+> 全局
+- syntax
 ```bash
 yarn global <add/bin/list/remove/upgrade> [--prefix]
+```
+- example
+```bash
+# 输出已安装的可执行文件的位置
+yarn global bin
+```
+### # yarn install
+- syntax
+```bash
+
+```
+### # yarn list
+> 列出已安装的包
+- syntax
+```bash
+yarn [global] list [flags]
+```
+- flags
+```bash
+--depth  Type: Int          限制输出依赖深度
+--pattern  Type: String     筛选依赖列表
+```
+- example
+```bash
+yarn global list --depth 0
+yarn list --pattern sass
 ```
