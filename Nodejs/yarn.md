@@ -6,7 +6,8 @@ yarn config get registry
 yarn config set registry https://registry.taobao.org
 yarn config set registry https://registry.yarnpkg.com
 ```
-## yarn 配置 global 地址
+## yarn 全局配置
+### # yarn 全局安装配置
 - syntax
 ```bash
 # 输出已安装的可执行文件的位置 (需要将这个文件夹位置添加到 环境变量 path 中) 
@@ -18,11 +19,19 @@ yarn config set prefix <directory>
 yarn global dir
 # 设置 global dir
 yarn config set global-folder <directory>
-
-# 输出当前的 yarn 全局缓存位置
+```
+### # yarn cache
+> yarn 缓存
+- syntax
+```bash
+# 列出缓存列表
+yarn cache list [--pattern <pattern>]
+# 输出全局缓存位置
 yarn cache dir
-# 设置全局缓存位置
-yarn config set cache-folder <directory>
+# 清除全局缓存
+yarn cache clean [<pkg> ...]
+# 改变缓存路径
+yarn config set cache-folder <path>
 ```
 ## yarn 命令
 ```shell
