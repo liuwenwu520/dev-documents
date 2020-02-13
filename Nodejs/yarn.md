@@ -13,12 +13,15 @@ yarn config set registry https://registry.yarnpkg.com
 # 输出已安装的可执行文件的位置 (需要将这个文件夹位置添加到 环境变量 path 中) 
 yarn global bin
 # 配置全局位置
-yarn config set prefix <directory>
+yarn config set prefix <path>
 
 # 输出全局安装文件夹 (node_modules)
 yarn global dir
 # 设置 global dir
-yarn config set global-folder <directory>
+yarn config set global-folder <path>
+
+# 列出全局安装列表
+yarn global list [flags]
 ```
 ### # yarn cache
 > yarn 缓存
@@ -70,7 +73,15 @@ yarn global bin
 > 安装包
 - syntax
 ```bash
-yarn add <pkg>... [flags]
+yarn [global] add <pkg>... [flags]
+```
+- flags
+```bash
+-D, --dev   会在 devDependencies 里安装一个或多个包
+-P, --peer  会在 peerDependencies 里安装一个或多个包
+-O, --optional  会在 optionalDependencies 里安装一个或多个包
+-E, --exact 会安装包的精确版本。默认是安装包的主要版本里的最新版本
+-T, --tilde 安装包的次要版本里的最新版
 ```
 ### # yarn list
 > 列出已安装的包
