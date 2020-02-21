@@ -1,0 +1,14 @@
+### install nginx
+1. download nginx installer
+> eg. nginx-1.16.1.tar.gz
+2. extract nginx installer
+3. 进入解压文件夹中
+4. 运行配置
+```bash
+./configure
+```
+5. make and make install
+```bash
+make
+sudo make install
+```
