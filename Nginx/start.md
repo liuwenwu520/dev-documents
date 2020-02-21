@@ -12,3 +12,14 @@
 make
 sudo make install
 ```
+6. nginx install location
+location: /usr/local/nginx
+7. use soft link
+```bash
+sudo su /usr/lcoal/nginx/bin/nginx /usr/bin/nginx
+```
+8. start
+```bash
+# 需要写入日志，必须使用管理员权限才能启动
+sudo nginx
+```
