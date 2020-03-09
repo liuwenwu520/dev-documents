@@ -11,3 +11,13 @@ git clone <url> [<name>]
 # 克隆一个仓库，并重命名为 temp
 git clone https://gitee.com/liuwenwu520/te temp
 ```
+### 检查当前文件状态
+- syntax
+```bash
+git status
+```
+### 跟踪新文件
+- syntax
+```bash
+git add <file>
+```
