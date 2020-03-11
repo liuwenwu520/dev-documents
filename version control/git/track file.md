@@ -64,10 +64,48 @@ git commit [option]
 - option
 ```bash
 -m  将提交信息与命令放在同一行
+-a  Git 就会自动把所有已经跟踪过的文件暂存起来一并提交
 ```
 - example
 ```bash
-git commit
+git commit -m 提交测试
+git commit -m "commit test"
+```
+### 移除文件
+- syntax
+```bash
+git rm [option] <path|expression>
+```
+- option
+```bash
+-f  强制删除，删除之前修改过或已经放到暂存区的文件
+--cached  从 Git 仓库中删除（亦即从暂存区域移除）,文件保留在当前工作目录中
+```
+- example
+```bash
+# 移除文件 PROJECTS.md
+git rm PROJECTS.md
+
+git rm --cached README
+
+# 删除 log/ 目录下扩展名为 .log 的所有文件
+git rm log/\*.log
+
+# 删除所有名字以 ~ 结尾的文件
+git rm \*~
+```
+### 移动文件
+> 使用此命令会自动跟踪修改后的文件
+- syntax
+```bash
+git mv <file_from> <file_to>
+```
+- example
+```bash
+# git mv 相当于
+mv README.md README
+git rm README.md
+git add README
 ```
 
 
