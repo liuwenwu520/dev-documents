@@ -46,3 +46,29 @@ doc/*.txt
 # 忽略 doc/ 目录及其所有子目录下的 .pdf 文件
 doc/**/*.pdf
 ```
+### 比较当前文件和暂存快照之间的差异
+- syntax
+```bash
+git diff [option]
+```
+- option
+```bash
+--staged  查看已暂存的将要添加到下次提交里的内容
+--cached  查看已经暂存起来的变化
+```
+### 提交更新
+- syntax
+```bash
+git commit [option]
+```
+- option
+```bash
+-m  将提交信息与命令放在同一行
+```
+- example
+```bash
+git commit
+```
+
+
+
