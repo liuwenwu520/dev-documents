@@ -22,20 +22,5 @@ git clone https://gitee.com/liuwenwu520/te temp
 ```bash
 git status
 ```
-### 查看提交历史
-- syntax
-```bash
-git log [option]
-```
-- option
-```bash
--p, -patch  显示每次提交所引入的差异（按 补丁 的格式输出）
--num  限制显示的日志条目数量，如 -2 选项来显示最近的两次提交
---stat  展示每次提交的简略统计信息
---pretty  
-```
-- example
-```bash
-git log --pretty=format:"%h - %an, %ar : %s"
-```
+
 
