@@ -11,12 +11,12 @@ git status [option]
 ### 跟踪文件
 - syntax
 ```bash
-git add <file>
+git add <file>...
 ```
 ### 暂存已修改文件
 - syntax
 ```bash
-git add <file>
+git add <file>...
 ```
 ### 忽略文件
 - syntax
