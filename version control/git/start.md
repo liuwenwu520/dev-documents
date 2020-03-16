@@ -1,4 +1,10 @@
 ## git 基础
+### git init
+> 初始化一个项目
+- syntax
+```bash
+git init [option]
+```
 ### git clone
 > 克隆一个仓库
 - syntax
