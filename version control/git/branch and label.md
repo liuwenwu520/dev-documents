@@ -31,3 +31,17 @@ git branch [<options>]
 --merged  查看哪些分支已经合并到当前分支
 --no-merged  查看所有包含未合并工作的分支
 ```
+### 切换分支（新）
+> 将会替换 checkout 中的切换分支
+- syntax
+```bash
+git switch <branch>
+```
+### 创建分支（新）
+- syntax
+```bash
+# 创建并切换到分支
+git switch -c <new-branch>
+# 创建并切换到分支，如何分支存在则会重置分支
+git switch -C <new-branch>
+```
