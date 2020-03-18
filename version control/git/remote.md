@@ -15,7 +15,7 @@ git remote [<options>]
 git remote add <shortname> <url>
 ```
 ### 从远程仓库中抓取与拉取
-> 访问远程仓库，从中拉取所有你还没有的数据  
+> 访问远程仓库，从中拉取所有你还没有的数据, 不会修改工作目录中的内容  
 > git fetch 命令只会将数据下载到你的本地仓库——它并不会自动合并或修改你当前的工作。 当准备好时你必须手动将其合并入你的工作。
 - syntax
 ```bash
@@ -48,8 +48,8 @@ git remote show origin
 ```bash
 git remote rename <old> <new>
 ```
-### git pull
-> 将远程存储库中的更改合并到当前分支
+### 拉取并合并
+> 查找当前分支所跟踪的服务器与分支，从服务器上抓取数据然后尝试合并入那个远程分支
 - syntax
 ```bash
 git pull [<options>] [<repository> [<refspec>…​]]
