@@ -1,12 +1,14 @@
 ## 分支和标签
 
 ### 切换分支（新）
+> 2.23 版本  
 > 将会替换 checkout 中的 切换分支 功能
 - syntax
 ```bash
 git switch <branch>
 ```
 ### 创建并切换分支（新）
+> 2.23 版本  
 - syntax
 > 替换 checkout 中的 创建并切换分支 功能
 ```bash
