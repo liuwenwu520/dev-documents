@@ -9,7 +9,29 @@ git reset HEAD <file>...
 ```bash
 git reset HEAD CONTRIBUTING.md
 ```
-### 撤销对文件的修改
+### 恢复（新）
+> git 2.23以上
+- syntax
+```bash
+# 恢复指定路径
+git restore [<options>] <pathspec>
+```
+- options
+```bash
+-s <tree>
+--source=<tree>  用给定树的内容恢复工作树文件用给定树的内容恢复工作树文件  
+
+-W, --worktree  指定恢复的位置
+-S, --staged  指定恢复的位置
+```
+- example
+```bash
+# 恢复所有 .c 文件
+git restore '*.c'
+# 恢复当前文件夹
+git restore .
+```
+### 恢复（旧）
 - syntax
 ```bash
 git checkout -- <file>...
