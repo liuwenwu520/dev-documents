@@ -9,8 +9,9 @@ git reset HEAD <file>...
 ```bash
 git reset HEAD CONTRIBUTING.md
 ```
-### 恢复（新）
+### 恢复文件状态（新）
 > git 2.23以上
+> 恢复文件的状态，不会对工作文件进行更改
 - syntax
 ```bash
 # 恢复指定路径
