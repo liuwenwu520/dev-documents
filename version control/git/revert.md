@@ -22,7 +22,7 @@ git restore [<options>] <pathspec>
 --source=<tree>  用给定树的内容恢复工作树文件用给定树的内容恢复工作树文件  
 
 -W, --worktree  指定恢复的位置
--S, --staged  指定恢复的位置
+-S, --staged  指定恢复的位置, 可恢复暂存的文件
 ```
 - example
 ```bash
