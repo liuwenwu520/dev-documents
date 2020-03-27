@@ -10,7 +10,11 @@ sudo pip install --upgrade pip
 ```
 ### # docker-compose.yml 属性
 - version
-拽定 docker-compose.yml 文件的写法格式
+指定 docker-compose.yml 文件的写法格式
+```
+version: "3.7"
+```
+
 - services
 多个容器集合
 - build
