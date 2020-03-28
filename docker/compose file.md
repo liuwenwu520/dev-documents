@@ -50,3 +50,13 @@ environment:
   - SHOW=true
   - SESSION_SECRET
 ```
+- volumes
+挂载主机路径到容器中
+```
+# 短语法
+volumes:
+  # 只指定一个路径让引擎创建卷积
+  - /var/lib/mysql
+  # 指定一个绝对路径映射
+  - /opt/data:/var/lib/mysql
+```
