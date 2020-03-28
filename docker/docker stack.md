@@ -15,7 +15,15 @@ docker statck ls
 > 列出所有栈
 ### # docker stack ps
 > 列出栈中运行的任务
+- syntax
+```
+docker stack ps [<opitons>] <stack>
+```
 ### # docker stack rm
 > 移除一个或多个栈
 ### # docker stack services
 > 列出栈中的服务
+- syntax
+```
+docker stack services [<opitons>] <stack>
+```
