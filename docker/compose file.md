@@ -11,6 +11,18 @@ services:
 > 版本
 ### # build
 > 在构件时应用的配置选项
+### # services
+> 多个容器列表
+- image
+镜像
+```
+image: postgres:11
+```
+- container_name
+容器名称，使用 docker stack deploy 此项会被忽略
+```
+container_name: my-web-container
+```
 - ports
 暴露端口
 ```
@@ -24,4 +36,17 @@ ports:
   - "127.0.0.1:5000-5010:5000-5010"
   - "6060:6060/udp"
   - "12400-12500:1240"
+```
+- environment
+环境变量
+```
+environment:
+  RACK_ENV: development
+  SHOW: 'true'
+  SESSION_SECRET:
+-----------------------
+environment:
+  - RACK_ENV=development
+  - SHOW=true
+  - SESSION_SECRET
 ```
