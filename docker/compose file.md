@@ -1,6 +1,6 @@
 ## compose file 
 > 用于 docker-compose 或者 docker stack  
-statck.yml
+> 默认文件名 docker-compose.yml
 ```
 version: "3.7"
 services:
