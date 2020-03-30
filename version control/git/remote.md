@@ -24,7 +24,11 @@ git fetch <remote>
 ### 推送到远程仓库
 - syntax
 ```bash
-git push [<remote>] [<branch>]
+git push [<options>] [<remote>] [<branch>]
+```
+- options
+```
+-u, --set-upstream  创建一个远程分支，并提交到远程分支（远程没有此分支）
 ```
 - example
 ```bash
