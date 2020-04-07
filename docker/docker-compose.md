@@ -10,6 +10,21 @@ sudo yum install python-pip
 sudo pip install --upgrade pip
 ```
 ### # 命令
+- syntax
+```
+docker-compose [-f <arg>...] [options] [COMMAND] [ARGS..]
+```
+- -f
+```
+-f  指定一个或多个 compose file 名称和路径
+
+# example
+docker-compose -f docker-compose.yml -f docker-compose.admin.yml run backup_db
+```
+- options
+```
+-p <project_name>  拽定项目名称
+```
 - 创建运行容器组合
 ```
 # 进入到 docker-compose.yml 文件所在目录
