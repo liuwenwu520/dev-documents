@@ -14,16 +14,14 @@ sudo pip install --upgrade pip
 ```
 docker-compose [-f <arg>...] [options] [COMMAND] [ARGS..]
 ```
-- -f
-```
--f  指定一个或多个 compose file 名称和路径
-
-# example
-docker-compose -f docker-compose.yml -f docker-compose.admin.yml run backup_db
-```
 - options
 ```
+-f  指定一个或多个 compose file 名称和路径
 -p <project_name>  拽定项目名称
+```
+- example
+```
+docker-compose -f docker-compose.yml -f docker-compose.admin.yml run backup_db
 ```
 - 创建运行容器组合
 ```
