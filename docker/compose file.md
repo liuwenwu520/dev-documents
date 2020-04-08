@@ -7,6 +7,20 @@ services:
   webapp:
     build: ./dir
 ```
+### # 不支持的 docker statck deploy
+```
+build
+cgroup_parent
+container_name
+devices
+tmpfs
+external_links
+links
+network_mode
+restart
+security_opt
+userns_mode
+```
 ### # version
 > 版本
 ### # build
