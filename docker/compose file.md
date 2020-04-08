@@ -74,3 +74,29 @@ volumes:
   # 指定一个绝对路径映射
   - /opt/data:/var/lib/mysql
 ```
+### # 顶级 networks
+> 定义网络
+```
+services:
+  pg-net:
+```
+### # 服务级 networks
+> 将容器加入到定义的网络中
+```
+services:
+# 将 pg 服务加入到 pg-net 网络中
+# 其他同网络的可通过 pg 或 pg-net 对该容器进行访问
+  pg:
+    image: postgres
+    restart: always
+    networks:
+      pg-net:
+        aliases:
+          - pg-net
+# 将 pg-adminer 服务加入到 pg-net 网络中
+# 可对该网段的其他容器进行访问
+  pg-adminer:
+    image: adminer
+    networks:
+      - pg-net
+```
