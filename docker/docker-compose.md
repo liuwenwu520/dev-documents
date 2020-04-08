@@ -23,10 +23,11 @@ docker-compose [-f <arg>...] [options] [COMMAND] [ARGS..]
 ```
 docker-compose -f docker-compose.yml -f docker-compose.admin.yml run backup_db
 ```
-### # 构建、创建、重建、启动和分离容器
+### # up
+> 构建、创建、重建、启动和分离容器
 - syntax
 ```
-docker compose up [<options>] [--scale SERVICE=NUM...] [SERVICE...]
+up [<options>] [--scale SERVICE=NUM...] [SERVICE...]
 ```
 - options
 ```
