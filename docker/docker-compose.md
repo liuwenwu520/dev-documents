@@ -54,3 +54,20 @@ down [<options>]
 ```
 ps [optiions] [SERVICE...]
 ```
+### # stop
+> 停止运行的容器，不移除容器
+- syntax
+```
+stop [options] [SERVICE...]
+```
+- opitons:
+```
+-t, --timeout <TIMEOUT>  指定一个关闭倒计时（秒），默认值：10s
+```
+### # start
+> 启动存在的容器
+- syntax
+```
+start [SERVICE...]
+```
+
