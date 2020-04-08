@@ -37,12 +37,19 @@ docker compose up [<options>] [--scale SERVICE=NUM...] [SERVICE...]
 # 进入到 docker-compose.yml 文件所在目录
 docker-compose up -d
 ```
-### # 停止容器并移除由 up 创建的容器，网络，卷积，和镜像
+### # down
+> 停止容器并移除由 up 创建的容器，网络，卷积，和镜像
 - syntax
 ```
-docker-compose down [<options>]
+down [<options>]
 ```
 - options
 ```
 -v, --volumns  移除声明在 volumes 中命名卷
+```
+### # ps
+> 列出所有容器
+- syntax
+```
+ps [optiions] [SERVICE...]
 ```
