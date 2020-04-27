@@ -16,8 +16,8 @@ docker-compose [-f <arg>...] [options] [COMMAND] [ARGS..]
 ```
 - options
 ```
--f  指定一个或多个 compose file 名称和路径
--p <project_name>  拽定项目名称
+-f, --file <file>  指定一个或多个 compose file 名称和路径
+-p, --project-name <project_name>  指定另一个项目名称
 ```
 - example
 ```
