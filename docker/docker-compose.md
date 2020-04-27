@@ -12,12 +12,12 @@ sudo pip install --upgrade pip
 ### # 命令
 - syntax
 ```
-docker-compose [-f <arg>...] [options] [COMMAND] [ARGS..]
+docker-compose [-f <file>]... [<options>] [<COMMAND>] [<ARGS>..]
 ```
 - options
 ```
 -f, --file <file>  指定一个或多个 compose file 名称和路径
--p, --project-name <project_name>  指定另一个项目名称
+-p, --project-name <project_name>  指定项目名称（默认为父文件夹名称）
 ```
 - example
 ```
