@@ -14,7 +14,7 @@ git switch <branch>
 ```bash
 # 创建并切换到分支
 git switch -c <new-branch>
-# 创建并切换到分支，如何分支存在则会重置分支
+# 创建并切换到分支，如果分支存在则会重置分支
 git switch -C <new-branch>
 ```
 ### 创建分支
