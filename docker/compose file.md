@@ -74,6 +74,14 @@ volumes:
   # 指定一个绝对路径映射
   - /opt/data:/var/lib/mysql
 ```
+- restart
+重启策略
+```
+restart: "no"             (default，不启动)
+restart: always           (总是启动)
+restart: on-failure       (发生错误重启）
+restart: unless-stopped   (除非停止，否则启动）
+```
 ### # 顶级 networks
 > 定义网络
 ```
