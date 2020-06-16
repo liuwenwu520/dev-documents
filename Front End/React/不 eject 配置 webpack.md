@@ -30,3 +30,22 @@ module.exports = function override(config, env) {
 ```
 yarn add babel-plugin-import -D
 ```
+2. 在 config-overides.js 中配置引用
+```js
+const { override, fixBabelImports, addWebpackAlias } = require('customize-cra')
+const path = require('path')
+const resolve = dir => path.join(__dirname, '.', dir)
+
+module.exports = override(
+  // 配置 antd-mobile
+  fixBabelImports('import', {
+    libraryName: 'antd-mobile',
+    libraryDirectory: 'es',
+    style: 'css'
+  }),
+  // 配置别名
+  addWebpackAlias({
+    '@': resolve('src')
+  })
+)
+```
