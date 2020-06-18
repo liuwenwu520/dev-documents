@@ -14,6 +14,8 @@ git remote [<options>]
 ```bash
 git remote add <shortname> <url>
 ```
+
+
 ### 从远程仓库中抓取与拉取
 > 访问远程仓库，从中拉取所有你还没有的数据, 不会修改工作目录中的内容  
 > git fetch 命令只会将数据下载到你的本地仓库——它并不会自动合并或修改你当前的工作。 当准备好时你必须手动将其合并入你的工作。
@@ -21,19 +23,7 @@ git remote add <shortname> <url>
 ```bash
 git fetch <remote>
 ```
-### 推送到远程仓库
-- syntax
-```bash
-git push [<options>] [<remote>] [<branch>]
-```
-- options
-```
--u, --set-upstream  创建一个远程分支，并提交到远程分支（远程没有此分支）
-```
-- example
-```bash
-git push origin master
-```
+
 ### 查看某个远程仓库
 - syntax
 ```bash
@@ -57,4 +47,22 @@ git remote rename <old> <new>
 - syntax
 ```bash
 git pull [<options>] [<repository> [<refspec>…​]]
+```
+### 推送到远程仓库
+- syntax
+```bash
+git push [<options>] [<remote>] [<branch>]
+```
+- options
+```
+-u, --set-upstream  创建一个远程分支，并提交到远程分支（远程没有此分支）
+-d, --delete  删除远程服务器上的分支
+```
+- example
+```bash
+git push origin master
+# 在远程服务器上创建分支
+git push origin -u master-hotfix
+# 在远程服务器上删除分支
+git push origin -d master-hotfix
 ```
