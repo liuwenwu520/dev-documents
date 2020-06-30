@@ -1,6 +1,6 @@
 ## Date 转换
 ### # Date 转换成 String
-```js
+```typescript
 /**
  * 日期格式化
  * @param formate yyyy MM DD HH mm ss fff
