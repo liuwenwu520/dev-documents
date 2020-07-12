@@ -10,7 +10,7 @@ repositories {
 }
 ```
 ### # 安装 gradle
-> (gradle 官方教程)[https://docs.gradle.org/current/userguide/installation.html]  
+> [gradle 官方教程](https://docs.gradle.org/current/userguide/installation.html)  
 > 依赖与 jdk 8 以上
 1. 下载 gradle 二进制包
 2. 解压 gradle 下载文件
