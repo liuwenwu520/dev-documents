@@ -85,7 +85,7 @@ restart: unless-stopped   (除非停止，否则启动）
 ### # 顶级 networks
 > 定义网络
 ```
-services:
+networks:
   pg-net:
 ```
 ### # 服务级 networks
