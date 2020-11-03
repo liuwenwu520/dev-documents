@@ -5,9 +5,14 @@
 ```bash
 git reset HEAD <file>...
 ```
+- options
+```
+--hard <commit id>  将指针指向指定版本
+```
 - example
 ```bash
 git reset HEAD CONTRIBUTING.md
+git reset --hard a906b4ecdc2a8f9dfbac3b4bce326dd916a4785e
 ```
 ### 恢复文件状态（新）
 > git 2.23以上
