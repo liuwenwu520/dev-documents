@@ -7,7 +7,7 @@ git reset HEAD <file>...
 ```
 - options
 ```
---hard <commit id>  将指针指向指定版本
+--hard <commit id>  将head指向指定版本
 ```
 - example
 ```bash
