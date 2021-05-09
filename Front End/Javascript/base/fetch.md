@@ -23,15 +23,18 @@ async function request(option) {
     // referrerPolicy
     init.referrerPolicy = option.referrerPolicy || 'no-referrer'
     // body, headers
+    init.headers = option.headers || {}
     // 通过 body 来处理 Content-Type
-    if (!(option.body instanceof FormData) && (typeof option.body === 'object')) {
-      init.headers = {
-        'Content-Type': 'application/json',
-        ...option.headers,
+    if (option.body) {
+      if (option.body instanceof FormData) {
+        init.body = option.body;
+      } else if (typeof option.body === 'object') {
+        init.headers['Content-Type'] = 'application/json'
+        init.body = JSON.stringify(option.body);
+      } else {
+        init.headers['Content-Type'] = 'application/json'
+        init.body = option.body;
       }
-      init.body = JSON.stringify(option.body)
-    } else if (option.body instanceof FormData) {
-      init.body = option.body
     }
     // params
     // 处理 params 将 params 加到 url 后
@@ -40,9 +43,19 @@ async function request(option) {
       url += '?' + paramsStr
     }
   }
-  const resp = await fetch(url, init)
   // 打印返回流，未处理返回流和空的情况
-  console.log(resp)
-  return resp.json()
+  try {
+    const resp = await fetch(url, init);
+    console.log(resp);
+    
+    // 打印返回流，未处理返回流和空的情况
+    if (resp.ok) {
+      return resp.json();
+    } else {
+      return Promise.reject(resp)
+    }
+  } catch (ex) {
+    return Promise.reject(ex)
+  }
 }
 ```
