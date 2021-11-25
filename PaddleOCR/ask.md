@@ -1,5 +1,4 @@
-# 安装 PaddleOCR 服务
-## 问题
+## 安装 PaddleOCR 服务 过程中的问题
 ### 1.pip 安装whl文件报 is not a supported wheel on this platform
 ```
 出现问题的原因：
