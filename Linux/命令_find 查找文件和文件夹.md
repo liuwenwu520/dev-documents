@@ -12,3 +12,8 @@ find [path] [options]
 查找当前目录下的所有以 node 开头的文件文件夹
 find . -name "node*"
 ```
+-prune 排除文件夹
+```bash
+# 查询 a.txt 排序文件夹 ./abc
+find . -path ./abc -a -prune -o -name a.txt -print
+```
