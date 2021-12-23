@@ -40,6 +40,7 @@ plugins {
 ```kt
 subprojects {
 	apply(plugin = "kotlin")
+	apply(plugin = "kotlin-spring")
 	tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 		kotlinOptions {
 			freeCompilerArgs = listOf("-Xjsr305=strict")
