@@ -20,10 +20,12 @@ dependencies {
 3. 加载 gradle 改变引入 kotlin 文件
 4. 添加 kotlin 编译任务
 > .\build.gradle.kts
-```bash
-kotlinOptions {
-	freeCompilerArgs = listOf("-Xjsr305=strict")
-	jvmTarget = "1.8"
+```kt
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+	kotlinOptions {
+		freeCompilerArgs = listOf("-Xjsr305=strict")
+		jvmTarget = "1.8"
+	}
 }
 ```
 ### 多应用项目
