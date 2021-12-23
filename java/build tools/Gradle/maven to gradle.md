@@ -1,5 +1,5 @@
 ## 转换 maven 项目为 gradle 项目
-### 1.运行 gradle 初始化
+1. 运行 gradle 初始化
 ```bash
 gradle init
 
@@ -11,11 +11,11 @@ Select build script DSL:
   2: Kotlin
 2
 ```
-### 2.修改 pom 文件名称，以禁用 maven
+2. 修改 pom 文件名称，以禁用 maven
 ```bash
 pom.xml => p.txt
 ```
-### 3.配置仓库
+3. 配置仓库
 > 配置仓库，只需要在根文件下进行配置
 > .\build.gradle.kts
 ```kt
@@ -26,5 +26,17 @@ repositories {
 	jcenter()
 }
 ```
-### 4.配置各个模块
+4. 配置各个模块
 > .\settings.gradle.kts
+```kotlin
+rootProject.name = "lsbhxxpt-api"
+include("app")
+```
+### 5.配置 spring boot
+> .\build.gradle.kts
+```kotlin
+plugins {
+	id("org.springframework.boot") version "2.5.8"
+}
+apply(plugin = "io.spring.dependency-management")
+```
