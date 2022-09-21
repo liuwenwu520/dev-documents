@@ -27,3 +27,7 @@ PATH    $GRADLE$\bin
 ```
 gradle -v
 ```
+6. 配置本地仓库位置（使用环境变量）
+```
+GRADLE_USER_HOME    <GRADLE REPOSITORY PATH>
+```
