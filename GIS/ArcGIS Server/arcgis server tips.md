@@ -1,4 +1,4 @@
-### 1.Maximum number of conections to instance exceeded.
+### 1.Maximum number of connections to instance exceeded.
 ```
 SDE本身默认设置的最大连接数为48个，10.6版本为64个。
 可以使用select * from SDE.server_config where prop_name='CONNECTIONS'查看实际值。
