@@ -113,3 +113,27 @@ aliases: up, update, upgrade
 # 更新全局所有包
 npm up -g
 ```
+
+### 镜像的使用
+一些常用的国内npm镜像源如下：  
+- cnpmjs镜像：https://r.cnpmjs.org/
+- npmmirror镜像：https://npmmirror.com/
+- 华为云镜像：https://mirrors.huaweicloud.com/repository/npm/
+- 腾讯云镜像：https://mirrors.cloud.tencent.com/npm/
+
+如果您想使用nrm工具快速切换不同的npm镜像源，您可以参考以下步骤：  
+- 安装nrm工具：  
+```bash
+npm install -g nrm
+```
+- 查看可用的npm镜像源列表：
+
+```bash
+nrm ls
+```
+
+- 切换到某个npm镜像源，例如腾讯云：
+
+```bash
+nrm use tencent
+```
